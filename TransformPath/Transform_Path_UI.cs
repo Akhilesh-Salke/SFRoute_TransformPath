@@ -601,11 +601,11 @@ public class Transform_Path_UI
     {
         NXOpen.Part workPart = theSession.Parts.Work;
 
-        // 1️⃣ Set transform option properly
+      
         builder.Transform.TransformOption =
             NXOpen.Routing.TransformPathBuilder.TransformOption.Distance;
 
-        // 2️⃣ Get direction from vector block
+       
         Vector3d dirVec = vectorSelectD.Vector;
         Point3d origin = vectorSelectD.Point;
 
@@ -617,7 +617,7 @@ public class Transform_Path_UI
 
         builder.Transform.DistanceVector = distDir;
 
-        // 3️⃣ Set numeric distance
+        
         builder.Transform.DistanceValue.Value = distanceD.Value;
     }
 
